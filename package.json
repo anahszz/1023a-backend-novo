@@ -4,8 +4,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src/index.ts",
+    "dev:mongo": "tsx watch src/index-mongo.ts",
     "build": "npm install && tsc",
-    "start": "node dist/index.js",
+    "start": "node dist/index-mongo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -21,6 +22,7 @@
   "devDependencies": {
     "@types/express": "^5.0.3",
     "@types/node": "^24.3.0",
+    "mongodb": "^6.19.0",
     "tsx": "^4.20.4"
   }
 }
