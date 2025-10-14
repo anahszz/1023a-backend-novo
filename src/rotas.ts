@@ -16,8 +16,8 @@ rotas.post("/produtos", produtoController.adicionar);
 rotas.get("/produtos", produtoController.listar);
 
 //rotas para carrinho
-rotas.post("/carrinho"), produtoController.adicionar;
-rotas.get("/carrinho"), produtoController.listar;
+rotas.post("/carrinho"), carrinhoController.adicionarItem;
+rotas.get("/carrinho"), carrinhoController.listar;
 
 
 //Ainda vamos ter que criar as rotas para carrinho e produtos
